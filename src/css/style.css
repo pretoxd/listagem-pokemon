@@ -1,0 +1,192 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5E5B5BAD;
+    color: #333333;
+    background-image: linear-gradient(180deg, #0C586E, #89F5C3);
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #F5F5F5;
+    text-shadow: -1px 0 black, 0 1px black,
+        1px 0 black, 0 -1px black;
+    background-image: linear-gradient(180deg, #010D26, #0487D9);
+}
+
+/* distanciando e ajustando icones do header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+/* ajustando tamanho e animando botão da logo */
+header .logo,
+.imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+
+/* deixando a imagem de alterar tema com fundo transparente */
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+
+/* ajustando tamanho e animando botão de alterar tema */
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+/* ajustando a lista que contem gif, nome, tipo, tipos e descrição do pokemon */
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* ajustando tamanho e animando card */
+main .cartao-pokemon {
+    background-color: #D8E3EC;
+    width: 200px;
+    border-radius: 1em;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+/* mudança de cor quando o mouse fica sobre o card */
+main .cartao-pokemon:hover {
+    background-color: #B6D4BB;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+
+/* estilização dos nomes */
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+/* ajustando tamanho e adiconando sombra no gif */
+main .cartao-pokemon .gif {
+    width: 65px;
+    height: 65px;
+    filter: drop-shadow(4px 5px 1px #000);
+}
+
+/* estilização da sublista tipos */
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+/* estilização do tipo do pokemon */
+main .cartao-pokemon .tipo {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.grama {
+    background-color: #7AC74C;
+}
+
+.veneno {
+    background-color: #DF67DDFB;
+}
+
+.fogo {
+    background-color: #EE8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #A6B91A;
+}
+
+.psiquico {
+    background-color: #F366B9;
+}
+
+.fada {
+    background-color: #fdb9e9;
+}
+
+.dragao {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background-color: #53a4cf;
+}
+
+.normal {
+    background-color: #a4acaf;
+}
+
+.lutador {
+    background-color: #d56723;
+}
+
+.aco {
+    background-color: #9eb7b8;
+}
+
+.voador {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background-color: #3dc7ef;
+}
+
+.gelo {
+    background-color: #51c4e7;
+}
+
+.fantasma {
+    background-color: #b97fc9;
+}
+
+.sombrio {
+    background-color: #707070;
+}
+
+.pedra {
+    background-color: #a38c21;
+}
+
+.terra {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7de3f;
+}
+
+.eletrico {
+    background-color: #eed535;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
